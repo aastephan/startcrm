@@ -4,11 +4,20 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "php": ">=8.0"
+        "php": ">=8.2"
     },
     "autoload": {
         "psr-4": {
             "App\\": "app/"
         }
+    },
+    "scripts": {
+        "setup": [
+            "chmod -R 775 writable",
+            "@php -r \"echo PHP_EOL . '----------------------------------------' . PHP_EOL; echo 'StartCRM setup completed.' . PHP_EOL; echo 'If Apache cannot write to writable run:' . PHP_EOL; echo 'sudo chown -R www-data:www-data writable' . PHP_EOL; echo '----------------------------------------' . PHP_EOL;\""
+        ],
+        "post-install-cmd": [
+            "@setup"
+        ]
     }
 }

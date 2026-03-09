@@ -1,9 +1,13 @@
+
+
 StartCRM - French
 
 Description
 
 StartCRM est un CRM simple et léger développé avec PHP et CodeIgniter 4.
 Il permet de gérer facilement des prospects, suivre les contacts et exporter les données.
+
+http://startcrm.online.fr
 
 ![Dashboard](docs/dashboard.png)
 
@@ -92,6 +96,7 @@ StartCRM - English
 
 StartCRM is a simple and lightweight CRM built with PHP and CodeIgniter 4.
 It allows you to manage prospects, track contacts and export data easily.
+http://startcrm.online.fr
 
 ![Dashboard](docs/dashboard.png)
 
