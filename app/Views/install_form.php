@@ -18,7 +18,7 @@
                 <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
             <?php endif; ?>
 
-            <form method="post" action="install/run">
+            <form method="post" action="<?= base_url('install/run') ?>">
                 <?= csrf_field() ?>
 
 

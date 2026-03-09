@@ -28,6 +28,7 @@ if (!file_exists(ROOTPATH . 'install.lock')) {
     $routes->get('Install', 'Install::index');    // majuscule I
     $routes->get('install', 'Install::index');    // aussi en minuscules
     $routes->post('install/run', 'Install::run');
+    $routes->get('install/run', 'Install::run'); // pour pouvoir accéder par GET
 }
 $routes->post('install/test-connection', 'Install::testConnection');
 //Auth
