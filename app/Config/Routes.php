@@ -19,6 +19,7 @@ $routes->get('Login', 'Login::index');
 // Logout
 $routes->get('Logout', 'Logout::index');
 
+// Rediriger toute URL /Install vers /install
 
 
 // Install
