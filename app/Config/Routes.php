@@ -21,8 +21,9 @@ $routes->get('Logout', 'Logout::index');
 
 // Install
 // Si le fichier install.lock n'existe pas, autoriser l'accès
-if (!file_exists(ROOTPATH . 'install.lock')) {
-    $routes->get('install', 'Install::index');
+if (!file_exists(ROOTPATH . 'install.lock')) { 
+    $routes->get('Install', 'Install::index');    // majuscule I
+    $routes->get('install', 'Install::index');    // aussi en minuscules
     $routes->post('install/run', 'Install::run');
 }
 $routes->post('install/test-connection', 'Install::testConnection');
