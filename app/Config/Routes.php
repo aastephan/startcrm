@@ -19,10 +19,7 @@ $routes->get('Login', 'Login::index');
 // Logout
 $routes->get('Logout', 'Logout::index');
 
-// Rediriger toute URL /Install vers /install
-$routes->get('Install', function() {
-    return redirect()->to('/install');
-});
+
 
 // Install
 // Si le fichier install.lock n'existe pas, autoriser l'accès
