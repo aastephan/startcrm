@@ -78,6 +78,7 @@ class Filters extends BaseFilters
             'except' => [
                 'Prospects/enrich',
                 'install/test-connection',
+                'install/run',
                 'Export/csv',
                 //'install/run'
                     // Exclut toutes les URLs commençant par api/webhook/

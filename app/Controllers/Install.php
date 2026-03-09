@@ -92,7 +92,7 @@ class Install extends Controller
         }
 
         // 4️⃣ Exécuter SQL
-        $sqlFile = ROOTPATH . 'startcrm.sql';
+        $sqlFile = ROOTPATH . '/database/startcrm.sql';
         if (!file_exists($sqlFile)) {
             return redirect()->back()->with('error', 'Fichier SQL manquant : startcrm.sql');
         }
