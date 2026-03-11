@@ -45,7 +45,13 @@ Le serveur web doit pointer vers le dossier public/.
 Exemple :
 
 http://votre-serveur/startcrm/public
-4. Lancer l'installation
+
+4.  Donner les droits a apache sur le dossier sudo chown -R www-data:www-data /var/www/html/startcrm
+
+3)	sudo chmod -R 775 /var/www/html/nomdusite/writable
+
+
+5. Lancer l'installation
 
 Ouvrez votre navigateur et allez à l'adresse :
 
@@ -59,7 +65,7 @@ créer le compte administrateur
 
 finaliser l'installation
 
-5. Accéder à l'application
+6. Accéder à l'application
 
 Une fois l'installation terminée :
 
@@ -133,8 +139,13 @@ Point your web server to the public/ directory.
 
 Example:
 
+4. Give the rights to Apache sudo chown -R www-data:www-data /var/www/html/startcrm
+
+4.1	sudo chmod -R 775 /var/www/html/siteinstall/writable
+
 http://your-server/startcrm/public
-4. Run the installer
+
+5. Run the installer
 
 Open your browser and go to:
 
@@ -148,7 +159,7 @@ administrator account creation
 
 initial setup
 
-5. Login
+6. Login
 
 After installation, access the CRM from:
 

@@ -89,7 +89,7 @@
                       <?php }
                       } 
                       ?>
-                  
+                     <a href="<?= base_url('/assets/csv/modele.csv') ?>" class="btn btn-success mb-2">Télécharger modèle de CSV Importation</a>
 
                     <!-- Content Row -->
                     <div class="row">
@@ -101,6 +101,8 @@
                                       
                                         
                                           <div class="row">
+
+                                         
                       
                                      
                                           <form action="<?php echo base_url('/Import/importCSV');?>" method="post" enctype="multipart/form-data">
