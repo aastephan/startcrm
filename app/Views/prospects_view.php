@@ -263,7 +263,7 @@ $(document).on('click', '.btn-contacted', function() {
     data[csrfName] = csrfHash;
 
     $.ajax({
-        url: '/Prospects/markContacted/' + id,
+        url: '<?= base_url('/Prospects/markContacted/')?>' + id,
         type: 'POST',
         data: data,
         dataType: 'json',
